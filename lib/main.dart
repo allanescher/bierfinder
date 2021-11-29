@@ -1,3 +1,4 @@
+import 'package:bierfinder/CrieConta/CrieConta.dart';
 import 'package:bierfinder/LoginPage/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,6 +23,11 @@ class MyApp extends StatelessWidget {
           name: '/home', 
           page: () => HomePage()
         ,)*/
+        GetPage(
+          name: '/crieconta', 
+          page: () => CrieConta(),
+          ),
+    
       ],      
     );
   }

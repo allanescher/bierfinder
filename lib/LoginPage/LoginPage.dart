@@ -121,7 +121,9 @@ class LoginPage extends StatelessWidget {
                 children: <Widget>[
                   TextButton(
                       style: TextButton.styleFrom(primary: Colors.black),
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed('/crieconta');
+                      },
                       child: Text("Crie sua conta".toUpperCase())),
                   Container(color: Colors.black, width: 2.0, height: 20.0),
                   TextButton(
