@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:bierfinder/Utils/appconstant.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +10,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       //criando tela home na tela login
       home: Scaffold(
-        body: Container(
+        body:  Container(
           padding: const EdgeInsets.all(16.0), //padding do body geral da tela
           height: double.infinity,
           decoration: BoxDecoration(
@@ -36,7 +37,7 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   //formatação do nome
                   color: Colors.black,
-                  fontSize: 30.0,
+                  fontSize: 35.0,
                   fontWeight: FontWeight.bold,
                   fontFamily: "Pacifico",
                 ),
@@ -105,7 +106,7 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.toNamed('/home');
+                      Get.toNamed('/homepage');
                     },
                     child: Text("Login".toUpperCase()),
                     style: ElevatedButton.styleFrom(

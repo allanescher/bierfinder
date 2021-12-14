@@ -1,5 +1,6 @@
-import 'package:bierfinder/CrieConta/CrieConta.dart';
-import 'package:bierfinder/LoginPage/LoginPage.dart';
+import 'package:bierfinder/pages/HomePage/HomePage.dart';
+import 'package:bierfinder/pages/LoginPage/LoginPage.dart';
+import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,23 +13,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       getPages: [
         GetPage(
-          name: '/', 
+          name: '/',
           page: () => LoginPage(),
-        ),/*
+        ),
         GetPage(
-          name: '/home', 
-          page: () => HomePage()
-        ,)*/
+          name: '/homepage',
+          page: () => HomePage(),
+        ),
         GetPage(
-          name: '/crieconta', 
+          name: '/crieconta',
           page: () => CrieConta(),
-          ),
-    
-      ],      
+        ),
+      ],
     );
   }
 }

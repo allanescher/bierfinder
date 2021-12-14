@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, prefer_const_constructors
+
 import 'package:bierfinder/Utils/appconstant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
