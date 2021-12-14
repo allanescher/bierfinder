@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:bierfinder/Utils/appconstant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -22,7 +24,7 @@ class CrieConta extends StatelessWidget {
               height: 80,
             ),
             Text(
-              //nome do app
+              //nome do app     
               "Cadastre-se ",
               style: TextStyle(
                 //formatação do nome

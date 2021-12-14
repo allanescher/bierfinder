@@ -127,7 +127,9 @@ class LoginPage extends StatelessWidget {
                       child: Text("Crie sua conta".toUpperCase())),
                   Container(color: Colors.black, width: 2.0, height: 20.0),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed('/esquecisenha');
+                      },
                       child: Text("Esqueceu sua senha".toUpperCase()),
                       style: TextButton.styleFrom(primary: Colors.black))
                 ],

@@ -1,4 +1,5 @@
 import 'package:bierfinder/CrieConta/CrieConta.dart';
+import 'package:bierfinder/EsqueciSenha/EsqueciSenha.dart';
 import 'package:bierfinder/LoginPage/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,19 +17,23 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: [
         GetPage(
-          name: '/', 
+          name: '/',
           page: () => LoginPage(),
-        ),/*
+        ),
+        /*
         GetPage(
           name: '/home', 
           page: () => HomePage()
         ,)*/
         GetPage(
-          name: '/crieconta', 
+          name: '/crieconta',
           page: () => CrieConta(),
-          ),
-    
-      ],      
+        ),
+        GetPage(
+          name: '/esquecisenha',
+          page: () => EsqueciSenha(),
+        ),
+      ],
     );
   }
 }
