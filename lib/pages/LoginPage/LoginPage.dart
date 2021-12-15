@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
                         child: Icon(
                             //colocação do icone pessoa
                             Icons.person,
-                            color: Colors.lightGreen)),
+                            color: Colors.green)),
                     hintText:
                         "Coloque seu e-mail", //campo para digitar o e-mail
                     hintStyle: TextStyle(
@@ -90,7 +90,7 @@ class LoginPage extends StatelessWidget {
                               bottomLeft: Radius.circular(30.0),
                               topRight: Radius.circular(30.0),
                               bottomRight: Radius.circular(10.0))),
-                      child: Icon(Icons.lock, color: Colors.lightGreen)),
+                      child: Icon(Icons.lock, color: Colors.green)),
                   hintText: "Coloque sua senha",
                   hintStyle: TextStyle(color: Colors.black),
                   border: OutlineInputBorder(
@@ -112,7 +112,7 @@ class LoginPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         primary: Colors.white,
                         padding: const EdgeInsets.all(20.0),
-                        onPrimary: Colors.amber,
+                        onPrimary: Colors.green,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0)))),
               ),

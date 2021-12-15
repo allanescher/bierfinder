@@ -1,9 +1,7 @@
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
 import 'package:bierfinder/pages/LoginPage/LoginPage.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
-import 'package:bierfinder/CrieConta/CrieConta.dart';
 import 'package:bierfinder/EsqueciSenha/EsqueciSenha.dart';
-import 'package:bierfinder/LoginPage/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -23,7 +21,7 @@ class MyApp extends StatelessWidget {
           name: '/',
           page: () => LoginPage(),
         ),
-        /*
+        
         GetPage(
           name: '/homepage',
           page: () => HomePage(),
