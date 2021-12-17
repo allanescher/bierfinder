@@ -1,3 +1,5 @@
+
+import 'package:bierfinder/pages/EstiloCerveja/EstiloCerveja.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
 import 'package:bierfinder/pages/LoginPage/LoginPage.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
@@ -21,7 +23,6 @@ class MyApp extends StatelessWidget {
           name: '/',
           page: () => LoginPage(),
         ),
-        
         GetPage(
           name: '/homepage',
           page: () => HomePage(),
@@ -33,6 +34,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/esquecisenha',
           page: () => EsqueciSenha(),
+        ),
+        GetPage(
+          name: '/estilocerveja',
+          page: () => EstiloCerveja(),
         ),
       ],
     );

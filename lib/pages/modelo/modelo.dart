@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 16.0,
             ),
-            Expanded(
+            Container(
               //objeto para inserir e-mail
               child: (TextFormField(
                 style: TextStyle(

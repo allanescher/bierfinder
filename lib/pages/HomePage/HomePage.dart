@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 16.0,
             ),
-            Expanded(
+            Container(
               child: (TextFormField(
                 style: TextStyle(
                     color: Color(0xFF007838),
@@ -66,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: <Widget>[
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed('/estilocerveja');
+                        },
                         child: Text('PALE ALE'),
                         style: TextButton.styleFrom(
                           primary: Colors.black,
