@@ -174,6 +174,7 @@ class _HomePageState extends State<HomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
               label: 'Menu',
+              
             ),
           ],
         ),
@@ -181,3 +182,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
