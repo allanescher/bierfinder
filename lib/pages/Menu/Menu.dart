@@ -1,51 +1,63 @@
 
-// ignore_for_file: prefer_const_constructors, file_names
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:bierfinder/Utils/appconstant.dart';
+import 'package:bierfinder/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 
 class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
+      body: Container(
+        padding: const EdgeInsets.all(16.0), //padding do body geral da tela
+        height: double.infinity,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [Colors.amber, ColorThemeApp])),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            UserAccountsDrawerHeader(
-              accountEmail: Text("user@mail.com"),
-              accountName: Text("Seu zé"),
-              currentAccountPicture: CircleAvatar(
-                child: Text("SZ"),
+          Container(
+              //container
+              margin: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+              height: 80,
+          ),
+            Text(
+              //nome do app     
+              "Cadastros",
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Pacifico",
               ),
+            ),
+          SizedBox(height: 40.0),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Cadastrar Cerveja',
+                style: TextStyle( 
+                color: Colors.black,
+                fontSize: 20.0,
+              ),
+          ),
+          
+          ),
+          SizedBox(height: 10.0),
+            TextButton(
+            onPressed: () {},
+            child: const Text('Cadastrar Mestre Cervejeiro',
+                style: TextStyle( 
+                //formatação do nome
+                color: Colors.black,
+                fontSize: 20.0,
+              ),
+          ),
+          ),
 
-            ),
-            ListTile(
-              leading: Icon(Icons.person),
-              title: Text("Minha conta"),
-              onTap: () {
-                Navigator.pop(context);
-                //Navegar para outra página
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.shopping_basket),
-              title: Text("Meus pedidos"),
-              onTap: () {
-                Navigator.pop(context);
-                //Navegar para outra página
-
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.favorite),
-              title: Text("Favoritos"),
-              onTap: () {
-                Navigator.pop(context);
-                //Navegar para outra página
-              },
-            ),
           ],
         ),
       ),

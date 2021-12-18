@@ -2,6 +2,7 @@
 
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
+import 'package:bierfinder/pages/Menu/menu.dart';
 import 'package:flutter/material.dart';
 
 class NaviBar extends StatefulWidget {
@@ -15,6 +16,7 @@ class _NaviBarState extends State<NaviBar> {
   final List<Widget> pages = [
     HomePage(),
     CrieConta(),
+    Menu(),
   ];
 
   static int currItem = 0;
@@ -47,7 +49,7 @@ class _NaviBarState extends State<NaviBar> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
-              label: 'Config',
+              label: 'Cadastros',
             ),
           ],
           onTap: mudarTela,
