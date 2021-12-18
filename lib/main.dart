@@ -1,9 +1,9 @@
-
 import 'package:bierfinder/pages/EstiloCerveja/EstiloCerveja.dart';
 import 'package:bierfinder/pages/EsqueciSenha/EsqueciSenha.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
 import 'package:bierfinder/pages/LoginPage/LoginPage.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
+import 'package:bierfinder/pages/NaviBar/NaviBar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -39,6 +39,10 @@ class MyApp extends StatelessWidget {
           name: '/estilocerveja',
           page: () => EstiloCerveja(),
         ),
+        GetPage(
+          name: '/navibar',
+          page: () => NaviBar(),
+        )
       ],
     );
   }

@@ -238,25 +238,6 @@ class _EstiloCervejaState extends State<EstiloCerveja> {
             ),
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 0,
-          selectedItemColor: Colors.green,
-          backgroundColor: Colors.white,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Usuário',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.menu),
-              label: 'Menu',
-            ),
-          ],
-        ),
       ),
     );
   }

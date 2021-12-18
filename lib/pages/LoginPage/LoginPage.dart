@@ -106,7 +106,7 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.toNamed('/homepage');
+                      Get.toNamed('/navibar');
                     },
                     child: Text("Login".toUpperCase()),
                     style: ElevatedButton.styleFrom(
