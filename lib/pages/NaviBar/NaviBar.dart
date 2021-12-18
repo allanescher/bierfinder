@@ -1,12 +1,10 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:bierfinder/main.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:bierfinder/pages/DadosUsuario/DadosUsuario.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
 import 'package:bierfinder/pages/Menu/menu.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class NaviBar extends StatefulWidget {
   const NaviBar({Key? key}) : super(key: key);

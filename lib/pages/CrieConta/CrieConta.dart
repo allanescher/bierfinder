@@ -138,7 +138,7 @@ class CrieConta extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       primary: Colors.white,
                       padding: const EdgeInsets.all(20.0),
-                      onPrimary: Colors.amber,
+                      onPrimary: Colors.green,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0)))),
             ),

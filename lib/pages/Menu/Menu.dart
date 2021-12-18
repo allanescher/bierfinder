@@ -1,5 +1,5 @@
 
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors, file_names
 
 import 'package:bierfinder/Utils/appconstant.dart';
 import 'package:bierfinder/main.dart';
@@ -37,7 +37,7 @@ class Menu extends StatelessWidget {
             ),
           SizedBox(height: 40.0),
           TextButton(
-            onPressed: () {},
+            onPressed: () { Get.toNamed('/cadastrocerveja');},
             child: const Text('Cadastrar Cerveja',
                 style: TextStyle( 
                 color: Colors.black,
