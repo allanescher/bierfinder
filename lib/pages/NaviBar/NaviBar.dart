@@ -2,6 +2,7 @@
 
 import 'package:bierfinder/main.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
+import 'package:bierfinder/pages/DadosUsuario/DadosUsuario.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
 import 'package:bierfinder/pages/Menu/menu.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class NaviBar extends StatefulWidget {
 class _NaviBarState extends State<NaviBar> {
   final List<Widget> pages = [
     HomePage(),
-    CrieConta(),
+    DadosUsuario(),
     Menu(),
   ];
 
