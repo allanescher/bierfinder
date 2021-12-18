@@ -3,6 +3,7 @@
 import 'package:bierfinder/main.dart';
 import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:bierfinder/pages/HomePage/HomePage.dart';
+import 'package:bierfinder/pages/Menu/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,6 +18,7 @@ class _NaviBarState extends State<NaviBar> {
   final List<Widget> pages = [
     HomePage(),
     CrieConta(),
+    Menu(),
   ];
 
   static int currItem = 0;
@@ -48,8 +50,8 @@ class _NaviBarState extends State<NaviBar> {
               label: 'Usuário',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.menu),
-              label: 'Menu',
+              icon: Icon(Icons.settings),
+              label: 'Cadastros',
             ),
           ],
           onTap: mudarTela,
