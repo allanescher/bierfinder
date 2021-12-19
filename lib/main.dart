@@ -1,3 +1,4 @@
+import 'package:bierfinder/pages/CadastroMestre/CadastroMestre.dart';
 import 'package:bierfinder/pages/DadosUsuario/DadosUsuario.dart';
 import 'package:bierfinder/pages/CadastroCerveja/CadastroCerveja.dart';
 import 'package:bierfinder/pages/EstiloCerveja/EstiloCerveja.dart';
@@ -57,6 +58,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/cadastrocerveja',
           page: () => CadastroCerveja(),
+        ),
+        GetPage(
+          name: '/cadastromestre',
+          page: () => CadastroMestre(),
         )
       ],
     );
