@@ -5,7 +5,6 @@ import 'package:bierfinder/pages/CrieConta/CrieConta.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -14,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -93,7 +91,9 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: <Widget>[
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed('/estilocerveja');
+                        },
                         child: Text('CREAM ALE'),
                         style: TextButton.styleFrom(
                           primary: Colors.black,
@@ -121,7 +121,9 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: <Widget>[
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed('/estilocerveja');
+                        },
                         child: Text('SESSION IPA'),
                         style: TextButton.styleFrom(
                           primary: Colors.black,
@@ -142,7 +144,9 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     children: <Widget>[
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed('/estilocerveja');
+                        },
                         child: Text('IPA'),
                         style: TextButton.styleFrom(
                           primary: Colors.black,
@@ -166,4 +170,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
